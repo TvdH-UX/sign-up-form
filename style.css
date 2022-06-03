@@ -1,11 +1,65 @@
 body {
+  height: 100vh;
   display: flex;
 }
 
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 30%;
+  background-image: url(/images/nazarizal-mohammad-k5Z2AhnRwT8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header p, header a {
+  text-align: center;
+  font-size: .7rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+main {
+  height: 100%;
+  width: 70%;
+  padding: 0 30px;
+  background-color: darkolivegreen;
+}
+
 h1 {
-  font-family: "Della Respira", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Yellowtail', cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 p {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Open Sans', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  padding: 2vh 0;
+  gap: 10px;
+  background-color: rgb(51, 51, 51, 0.6);
+  top: 20vh;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.logo-svg {
+  width: 80px;
+  height: 80px;
+}
+
+.credit {
+  margin-bottom: 1.5rem;
 }
