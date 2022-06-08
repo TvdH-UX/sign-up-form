@@ -59,6 +59,14 @@ form h2 {
   margin-bottom: 40px;
 }
 
+label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.3rem;
+}
+
 #logo-container {
   display: flex;
   justify-content: center;
@@ -91,9 +99,6 @@ form h2 {
   gap: 50px;
 }
 
-/* .form-column {
-} */
-
 .form-row {
   display: flex;
   flex-direction: column;
@@ -104,10 +109,23 @@ form h2 {
 .form-row input[type="email"],
 .form-row input[type="tel"],
 .form-row input[type="password"] {
+  outline: none;
   width: 20vw;
   padding: 6px;
-  border: 1px solid #333;
+  border: 1px solid rgb(200, 200, 200);
   border-radius: 3px;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="tel"]:focus,
+.form-row input[type="password"]:focus {
+  border: 1px solid #18a191;
+  box-shadow: rgba(200, 200, 200, 0.1) 0px 2px 10px 0px;
+}
+
+.form-row input[type="password"]:invalid {
+  border: 1px solid red;
 }
 
 .sign-up button {
