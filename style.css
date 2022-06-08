@@ -67,6 +67,20 @@ label {
   margin-bottom: 0.3rem;
 }
 
+input + span {
+  position: relative;
+}
+
+input:invalid + span::after {
+  position: absolute;
+  content: "*";
+  font-weight: 500;
+  font-size: 0.8em;
+  color: #18a191;
+  top: -60px;
+  left: -14px;
+}
+
 #logo-container {
   display: flex;
   justify-content: center;
